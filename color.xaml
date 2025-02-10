@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="color.color"
+             Title="color"
+             >
+    <VerticalStackLayout>
+
+        <StackLayout Background="White" WidthRequest="500" HeightRequest="500"  VerticalOptions="Center" Margin="10" >
+            <Label Text="Color picker" HorizontalOptions="Center" FontSize="Large" VerticalOptions="Start"/>
+            <Label Text="Red Value:" Margin="5"/>
+            <Slider x:Name="red" ValueChanged="zmienionaWartoscRed" Maximum="255" Minimum="0" ThumbColor="DarkRed" MinimumTrackColor="DarkRed"/>
+            <Label Text="Green Value:" Margin="5"/>
+            <Slider x:Name="Green" ValueChanged="zmienionaWartoscGreen" Maximum="255" Minimum="0" ThumbColor="DarkGreen" MinimumTrackColor="DarkGreen"/>
+            <Label Text="Blue Value:" Margin="5"/>
+            <Slider x:Name="blue" ValueChanged="zmienionaWartoscBlue" Maximum="255" Minimum="0" ThumbColor="DarkBlue" MinimumTrackColor="DarkBlue"/>
+
+            <Button x:Name="lb1" Text="#000000" WidthRequest="120" Background="White" BorderColor="Black" BorderWidth="1" TextColor="Black" Clicked="kop"/>
+            
+            <Button x:Name="przy" Background="#123445" Text="random" Margin="10" Clicked="losuj"/>
+        </StackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
